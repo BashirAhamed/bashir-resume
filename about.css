@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.overall{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+}
+nav{
+        background-color: black;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        /* margin: 15px; */
+        border: 2px solid white;
+        animation: navbar 2s ease-in-out;
+        
+}
+@keyframes navbar{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav:hover{
+  border: 2px solid royalblue;
+}
+nav input{
+    display: none;
+}
+nav div{
+       display: flex;
+       justify-content:space-evenly;
+       align-items: center;
+       gap: 25%;
+       margin-right: 10%;
+       /* transition: 5s; */
+}
+nav h1{
+    color: white;
+}
+nav h1:hover{
+  color: royalblue;
+}
+nav div a{
+         text-decoration: none;
+         font-size: 25px;
+         color: rgb(42, 40, 37);
+         /* border: 2px dotted peru; */
+         border-radius:5px;
+         padding: 0;
+         color: white;
+}
+
+
+nav div a:hover{
+    color: royalblue;
+    border-top:3px solid white ;
+    border-bottom:3px solid white ;
+}
+
+nav .icon{
+    display: none;
+    color: royalblue;
+ }
+ .overall input:checked ~  div {
+    background-color:black;
+    left: 0;
+  }
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 40px;
+  margin-top: 4%;
+}
+.second div:first-child{
+  width: 30%;
+  
+}
+.second div:nth-child(2){
+  width: 30%;
+  line-height: 35px;
+  font-family:cursive;
+  
+}
+.second div:first-child img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+  /* animation: ; */
+  /* clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); */
+}
+.second div:nth-child(2) h1,span{
+  color: royalblue;
+}
+
+
+
+
+
+  @media screen and (min-width:300px) and (max-width:800px){
+    nav div{
+         position: fixed;
+         left: -100%;
+         top: 70px;
+         gap: 10%;
+         height: 90vh;
+         width: 100%;
+         background-color: black;
+         flex-direction: column;
+         justify-content: start;
+         padding-top: 30px;
+         transition: 2s;
+         
+}
+nav h1{
+    font-size: 25px;
+}
+
+  
+    nav .icon{
+        display: inline-block;
+        font-size: 40px;
+           
+        
+    }
+    nav div a{font-size: 30px;}
+    
+    nav .icon{
+      color: white;
+    }
+    .overall{
+      height: 100%;
+    }
+    .second{
+      flex-direction: column;
+      text-align: center;
+    }
+    .second div:first-child{
+      width: 100%;
+    }
+    .second div:nth-child(2){
+      width: 100%;
+    }
+  }
