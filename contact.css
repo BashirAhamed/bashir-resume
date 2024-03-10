@@ -6,7 +6,7 @@
 .overall{
   background-color: black;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 10px;
 }
 nav{
@@ -71,7 +71,54 @@ nav .icon{
     background-color:black;
     left: 0;
   }
-
+  .second{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      gap: 40px;
+      margin-top: 8%;
+  }
+  .box{
+    width: 30%;
+  }
+  .box2{
+    width: 30%;
+    
+  }
+  .box2 button{
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 15px;
+    width: 40%;
+  }
+  .box2 :first-child input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+  .box{
+    width: 40%;
+  }
+.frist{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.box h1{
+  color: royalblue;
+}
+.box i{
+  font-size: 40px;
+  color: royalblue;
+  margin-right: 10px;
+}
+.box p{
+  margin-right: 20px;
+  font-size:30px ;
+}
 
   
 
@@ -104,5 +151,17 @@ nav h1{
     
     nav .icon{
       color: white;
+    }
+    .overall{
+      height: 100%;
+    }
+    .second{
+      flex-direction: column;
+    }
+    .box{
+      width: 100%;
+    }
+    .box2{
+      width: 100%;
     }
   }
