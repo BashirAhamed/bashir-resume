@@ -216,4 +216,7 @@ nav h1{
     nav .icon{
       color: white;
     }
+    .overall{
+      height: 100%;
+    }
   }

@@ -145,7 +145,7 @@ nav h1{
       color: white;
     }
     .overall{
-      height: 100%;
+      max-height: 100%;
     }
     .second{
       flex-direction: column;
