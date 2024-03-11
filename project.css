@@ -86,7 +86,7 @@ nav .icon{
   border: 2px solid white;
   text-align: center;
   padding: 10px;
- ;
+  background-color: royalblue;
 }
 .button{
   background-color: royalblue;
@@ -105,7 +105,7 @@ nav .icon{
   border: 2px solid white;
   text-align: center;
   padding: 10px;
-  
+  background-color: royalblue;
 }
 .second div:nth-child(3){
   width: 25%;
@@ -113,9 +113,9 @@ nav .icon{
   border: 2px solid white;
   text-align: center;
   padding: 10px;
-  
+  background-color: royalblue;
 }
-.third{
+/* .third{
   display: flex;
     justify-content: center;
     align-items: center;
@@ -129,8 +129,8 @@ nav .icon{
   border: 2px solid white;
   text-align: center;
   padding: 10px
-}
-
+} */
+.second h1{color: black;}
 
 
   @media screen and (min-width:300px) and (max-width:800px){
