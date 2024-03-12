@@ -169,13 +169,18 @@ nav .icon{
   border-radius:25px;
   
 }
+.button a{
+  text-decoration: none;
+}
 .button:hover{
   background-color: royalblue;
   color: white;
   cursor: pointer;
-  transition: 2s;
+  
 }
-
+.button a:hover{
+  color: white;
+}
 
 @keyframes img{
     0%{

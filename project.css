@@ -6,7 +6,7 @@
 .overall{
   background-color: black;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 10px;
 }
 nav{
@@ -78,7 +78,7 @@ nav .icon{
     align-items: center;
     color: white;
     gap: 40px;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 .second div:first-child{
   width: 25%;
@@ -87,7 +87,12 @@ nav .icon{
   text-align: center;
   padding: 10px;
   background-color: royalblue;
+  transition: 3s;
 }
+.second div:first-child:hover{
+  background: none;
+  transition: 3s;
+  }
 .button{
   background-color: royalblue;
   color: white;
@@ -106,7 +111,12 @@ nav .icon{
   text-align: center;
   padding: 10px;
   background-color: royalblue;
+  transition: 3s;
 }
+.second div:nth-child(2):hover{
+  background: none;
+  transition: 3s;
+  }
 .second div:nth-child(3){
   width: 25%;
   max-height: 200px;
@@ -114,23 +124,37 @@ nav .icon{
   text-align: center;
   padding: 10px;
   background-color: royalblue;
+  transition: 3s;
 }
-/* .third{
+.second div:nth-child(3):hover{
+  background: none;
+  transition: 3s;
+}
+.third{
   display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     gap: 40px;
-    margin-top: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .third div:first-child{
   width: 25%;
   max-height: 200px;
   border: 2px solid white;
   text-align: center;
-  padding: 10px
-} */
-.second h1{color: black;}
+  padding: 10px;
+  background-color: royalblue;
+  transition: 3s;
+}
+
+.third div:first-child:hover{
+background: none;
+transition: 3s;
+}
+
+
 
 
   @media screen and (min-width:300px) and (max-width:800px){
@@ -167,6 +191,7 @@ nav h1{
     }
     .second{
       flex-direction: column;
+      gap: 40px;
     }
     .second div:first-child{
       width: 100%;
@@ -176,5 +201,13 @@ nav h1{
     }
     .second div:nth-child(3){
       width: 100%;
+    }
+    .third{
+      flex-direction: column;
+      gap: 40px;
+    }
+    .third div:nth-child(1){
+      width: 100%;
+
     }
   }
