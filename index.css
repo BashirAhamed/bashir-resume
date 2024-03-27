@@ -189,9 +189,7 @@ nav .icon{
 }
 
   @media screen and (min-width:300px) and (max-width:800px){
-    /* .overall{
-      height: 100%;
-    } */
+   
     nav div{
          position: fixed;
          left: -100%;
