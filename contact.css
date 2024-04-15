@@ -68,7 +68,7 @@ nav .icon{
     color:royalblue;
  }
  .overall input:checked ~  div {
-    background-color:black;
+    background-color:#333;
     left: 0;
   }
   .second{
@@ -131,7 +131,7 @@ nav .icon{
          gap: 10%;
          height: 90vh;
          width: 100%;
-         background-color: black;
+         background-color: #333;
          flex-direction: column;
          justify-content: start;
          padding-top: 30px;
